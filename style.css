@@ -6,7 +6,7 @@ body {
 .main_container {
    background-image: url("./image/bg1.jpg");
    filter: blur(8px);
-   height: 155vh;
+   height: 130vh;
    width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 .card{
    position:absolute;
-   top:93%;
+   top:75%;
    left:50%;
    text-align: center;
    transform:translate(-50%,-50%);
@@ -89,5 +89,9 @@ body {
   #adoptionTable td {
     font-size: 14px;
     padding: 10px;
+  }
+
+  .dog_adoption_registration{
+    display: none;
   }
 }
