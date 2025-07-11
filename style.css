@@ -1,27 +1,27 @@
 body {
-   margin: 0;
-   font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .main_container {
-   background-image: url("./image/bg1.jpg");
-   filter: blur(8px);
-   height: 130vh;
-   width: 100%;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+  background-image: url("./image/bg1.jpg");
+  filter: blur(8px);
+  height: 143vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.card{
-   position:absolute;
-   top:75%;
-   left:50%;
-   text-align: center;
-   transform:translate(-50%,-50%);
-   z-index:5;
-   width:45%;
-   padding:40px 0;
+.card {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 45%;
+  padding: 40px 0;
 
 }
 
@@ -44,9 +44,9 @@ body {
 /* Table styles */
 #adoptionTable {
   border-collapse: collapse;
-  min-width: 800px; 
+  min-width: 800px;
   width: 97%;
-  margin:10px;
+  margin: 10px;
   background-color: white;
   color: black;
   font-family: 'Quicksand', sans-serif;
@@ -85,13 +85,14 @@ body {
 
 /* Responsive font */
 @media (max-width: 640px) {
+
   #adoptionTable th,
   #adoptionTable td {
     font-size: 14px;
     padding: 10px;
   }
 
-  .dog_adoption_registration{
+  .dog_adoption_registration {
     display: none;
   }
 }
