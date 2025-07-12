@@ -1,12 +1,16 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
+  text-shadow:
+      1px 1px 0 #f5f1f113,
+      2px 2px 2px rgba(113, 113, 113, 0.4),
+      3px 3px 3px rgba(113, 112, 112, 0.2);
 }
 
 .main_container {
   background-image: url("./image/bg1.jpg");
   filter: blur(8px);
-  height: 143vh;
+  height: 110vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +19,7 @@ body {
 
 .card {
   position: absolute;
-  top: 83%;
+  top: 65%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -83,8 +87,68 @@ body {
   background-color: #dc2626;
 }
 
-/* Responsive font */
 @media (max-width: 640px) {
+
+  body {
+    margin: 0;
+    background: linear-gradient(130deg, #db69b3, #c2e875);
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow:
+      1px 1px 0 #f5f1f113,
+      2px 2px 2px rgba(113, 113, 113, 0.4),
+      3px 3px 3px rgba(113, 112, 112, 0.2);
+  }
+
+  .main_container {
+    height: auto;
+    filter: none;
+    background: none;
+  }
+
+  .card {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    width: 90vw;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.457);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.391);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+
+  .card label {
+    color: white;
+  }
+
+  input,
+  select,
+  textarea {
+    background: rgba(243, 241, 241, 0.196);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  #name_container,
+  #email_container,
+  #phone_container,
+  #age_container,
+  #size_container,
+  #agep_container,
+  #note_container {
+    width: 100%;
+  }
+
+  .dog_adoption_registration {
+    display: none;
+  }
 
   #adoptionTable th,
   #adoptionTable td {
@@ -92,7 +156,17 @@ body {
     padding: 10px;
   }
 
-  .dog_adoption_registration {
-    display: none;
+  /* Delete button */
+  #adoptionTable .delete-btn {
+    background-color: #d12d92;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  #adoptionTable .delete-btn:hover {
+    background-color: #dc2687;
   }
 }

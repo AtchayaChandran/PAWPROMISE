@@ -1,159 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>PAWPROMISE</title>
-   <!--Font Family-->
-   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-   <!--Tailwind CSS Link-->
-   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-   <!--CSS Link-->
-   <link rel="stylesheet" href="style.css">
-   <!--Font Awesome CDN-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAWPROMISE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <!---------------Font Awesome CDN----------------->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="icon" type="image/png" href="./image/adoptme.jpg">
-
-
+  <style>
+    body {
+      font-family: 'Fredoka One', cursive;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+<body class="bg-gradient-to-br from-yellow-50 to-orange-100 text-gray-800">
 
-<body>
-   <!-----------------------Navbar--------------------------->
-   <div>
-      <nav class="bg-green-500 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
-
-         <h1 class="md:text-4xl text-2xl font-extrabold">PAWPROMISE
-            <i class="fa-solid fa-paw" style="color: #030303;"></i>
-         </h1>
-
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-8 h-15 md:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round"
-               d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-         </svg>
-
-         <ul class="Flex hover:text-gray-600 cursor-pointer gap-5 font-semibold hidden md:flex">
-
-            <li class="px-3">
-               <a href="">
-                  <i class="fa-solid fa-user gap-5" style="color: #0a0a0a;"></i>
-               </a>
-            </li>
-         </ul>
+  <!--------------------Navbar------------->
+  <header class="md:bg-green-500 bg-pink-600 shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="md:text-3xl text-xl text-black">PAWPROMISE 
+         <i class="fa-solid fa-paw" style="color: #030303;"></i>
+      </h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline text-white text-xl">
+         <i class="fa-solid fa-house" style="color: #141414;"></i>
+        </a>
+        <a href="to-do-list.html" class="hover:underline">Contact</a>
       </nav>
-      <!----main container---->
-      <form id="adoptionForm">
-         <div class="main_container">
-         </div>
-         <div class="card text-center text-white font-extrabold text-2xl">
-            <h1 class="dog_adoption_registration mb-5">
-               <i class="fa-solid fa-paw" style="color: #030303;"></i>
-               Dog Adoption 🐶 Registration
-            </h1>
-            <!-- Row 1: Name + Email -->
-            <div class="flex flex-col sm:flex-row gap-4 mb-4 w-full sm:w-3/4 mx-auto">
+    </div>
+  </header>
 
-               <!-- Name -->
-               <div class="flex flex-col text-left w-full">
-                  <label class="px-1 text-white/100 mb-2">Name</label>
-                  <input id="name_container" type="text" placeholder="Your Name"
-                     class="px-5 py-1.5 text-black rounded-lg border-none focus:outline-none text-xl" />
-               </div>
+  <!------------------Hero Section------------->
+  <section class="relative flex items-center justify-center h-[90vh] bg-orange-100">
+    <div class="text-center px-6 fade-in">
+      <h2 class="text-5xl text-orange-600 mb-4">Adopt Love Today</h2>
+      <p class="text-lg mb-6 text-gray-700">Every tail deserves a happy ending. Find your furry soulmate now!</p>
+      <a href="#about" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full">Meet the Dogs</a>
+    </div>
+    <!---------------Animated Dog SVG------------->
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cute Dog" class="w-40 absolute bottom-0 right-10 animate-bounce hidden sm:block" />
+  </section>
 
-               <!-- Email -->
-               <div class="flex flex-col text-left w-full">
-                  <label class="px-1 text-white/100 mb-2">Email</label>
-                  <input id="email_container" type="email" placeholder="Email"
-                     class="px-5 py-1.5 text-black rounded-lg border-none focus:outline-none text-xl" />
-               </div>
-            </div>
+  <!-------------------About Section--------------->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-4xl text-orange-600 mb-4">Why Adopt From Us?</h3>
+      <p class="text-gray-700 text-lg">
+        We rescue, shelter, and love dogs until they find their forever families. When you adopt, you're giving a home and a heart to a soul who’s been waiting for love.
+      </p>
+    </div>
+  </section>
 
-            <!-- Row 2: Phone + Age -->
-            <div class="flex flex-col sm:flex-row gap-4 mb-4 w-full sm:w-3/4 mx-auto">
-               <!-- Phone -->
-               <div class="flex flex-col text-left w-full">
-                  <label class="px-1 text-white/100 mb-2">Phone</label>
-                  <input id="phone_container" type="tel" placeholder="Phone Number"
-                     class="px-5 py-1.5 text-black rounded-lg border-none focus:outline-none text-xl" />
-               </div>
-
-               <!-- Age -->
-               <div class="flex flex-col text-left w-full">
-                  <label class="px-1 text-white/100 mb-2">Age</label>
-                  <input id="age_container" type="number" placeholder="Your Age"
-                     class="px-5 py-1.5 text-black rounded-lg border-none focus:outline-none text-xl" />
-               </div>
-            </div>
-
-            <!-- Row 3: Size Preference + Age Preference -->
-            <div class="flex flex-col sm:flex-row gap-4 mb-4 w-full sm:w-3/4 mx-auto">
-
-               <!-- Size Preference -->
-               <div class="flex flex-col text-left w-full">
-                  <label class="px-1 text-white/100 mb-2">Size Preference</label>
-                  <select id="size_container"
-                     class="px-5 py-2 text-black rounded-lg border-none focus:outline-none text-xl">
-                     <option disabled selected>Select size</option>
-                     <option>Small Breed</option>
-                     <option>Medium Breed</option>
-                     <option>Large Breed</option>
-                     <option>No Preference</option>
-                  </select>
-               </div>
-
-               <!-- Age Preference -->
-               <div class="flex flex-col text-left w-full">
-                  <label class="px-1 text-white/100 mb-2">Age Preference</label>
-                  <select id="agep_container"
-                     class="px-5 py-2 text-black rounded-lg border-none focus:outline-none text-xl">
-                     <option disabled selected>Select age</option>
-                     <option>Puppy</option>
-                     <option>Adult Dog</option>
-                     <option>Senior Dog</option>
-                     <option>No Preference</option>
-                  </select>
-               </div>
-            </div>
-
-            <!-- Row 5: Additional Note -->
-            <div class="flex flex-col text-left mb-6 w-full sm:w-3/4 mx-auto">
-               <label class="px-1 text-white/100 mb-2">Additional Note</label>
-               <textarea id="note_container" rows="4" placeholder="Write something..."
-                  class="px-5 py-2 text-black rounded-lg border-none focus:outline-none text-xl resize-none"></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button id="submitBtn"
-               class="bg-white text-black px-6 py-2 rounded-lg text-xl hover:bg-gray-300 transition mb-6">
-               Submit
-            </button>
-         </div>
-      </form>
-
-
-      <!-- Table to display submitted adoption entries -->
-       <div class="overflow-x-auto w-full mb-5 mt-5">
-      <table id="adoptionTable" class="table-auto mx-auto text-black text-xl mt-6 border
-       border-black hidden min-w-max">
-         <thead>
-            <tr>
-               <th class="border border-black px-4 py-2">Name</th>
-               <th class="border border-black px-4 py-2">Email</th>
-               <th class="border border-black px-4 py-2">Phone</th>
-               <th class="border border-black px-4 py-2">Age</th>
-               <th class="border border-black px-4 py-2">Size</th>
-               <th class="border border-black px-4 py-2">Age Preference</th>
-               <th class="border border-black px-4 py-2">Note</th>
-               <th class="border border-black px-4 py-2">Action</th>
-            </tr>
-         </thead>
-         <tbody></tbody>
-      </table>
+  <!---------------------Dogs Grid----------------------->
+  <section id="adopt" class="py-20 bg-orange-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-4xl text-center text-orange-700 mb-10">Meet Our Adorable Paws</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!---------------Dog Card-------------------->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <img src="./image/d1.jpeg" alt="Dog 1" class="rounded-t-xl w-full h-60 object-cover">
+          <div class="p-4 text-center">
+            <h4 class="text-xl font-bold text-orange-600">Daisy</h4>
+            <p class="text-sm text-gray-600">1.5 yrs • Energetic & Gentle</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <img src="./image/d2.webp" alt="Dog 2" class="rounded-t-xl w-full h-60 object-cover">
+          <div class="p-4 text-center">
+            <h4 class="text-xl font-bold text-orange-600">Oscar</h4>
+            <p class="text-sm text-gray-600">3 yrs • Calm & Loyal</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <img src="./image/d3.png" alt="Dog 3" class="rounded-t-xl w-full h-60 object-cover">
+          <div class="p-4 text-center">
+            <h4 class="text-xl font-bold text-orange-600">Bella</h4>
+            <p class="text-sm text-gray-600">2 yrs • Friendly & Playful</p>
+          </div>
+        </div>
       </div>
-      <!--Javascript Link-->
-      <script src="script.js"></script>
+    </div>
+  </section>
+
+  <!-----------------------Footer-------------------->
+  <footer class="md:bg-orange-600 bg-pink-600 text-white text-center py-6">
+    <p>&copy; 2025 PAWPROMISE. Made with for Dogs.</p>
+  </footer>
+
 </body>
+</html>
