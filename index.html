@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,33 +8,44 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <!---------------Font Awesome CDN----------------->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="./image/adoptme.jpg">
   <style>
     body {
       font-family: 'Fredoka One', cursive;
     }
+
     .fade-in {
       animation: fadeIn 2s ease-out;
     }
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
+
 <body class="bg-gradient-to-br from-yellow-50 to-orange-100 text-gray-800">
 
   <!--------------------Navbar------------->
   <header class="md:bg-green-500 bg-pink-600 shadow sticky top-0 z-50">
     <div class="container mx-auto px-3 md:px-6 py-4 flex justify-between items-center">
-      <h1 class="md:text-3xl text-xl text-black">PAWPROMISE 
-         <i class="fa-solid fa-paw" style="color: #030303;"></i>
+      <h1 class="md:text-3xl text-xl text-black">PAWPROMISE
+        <i class="fa-solid fa-paw" style="color: #030303;"></i>
       </h1>
       <nav class="space-x-2 md:space-x-4">
         <a href="index.html" class="hover:underline text-white text-xl">
-         <i class="fa-solid fa-house" style="color: #141414;"></i>
+          <i class="fa-solid fa-house" style="color: #141414;"></i>
         </a>
         <a href="to-do-list.html" class="hover:underline">Contact</a>
       </nav>
@@ -48,7 +60,8 @@
       <a href="#about" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full">Meet the Dogs</a>
     </div>
     <!---------------Animated Dog SVG------------->
-    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cute Dog" class="w-40 absolute bottom-0 right-10 animate-bounce hidden sm:block" />
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cute Dog"
+      class="w-40 absolute bottom-0 right-10 animate-bounce hidden sm:block" />
   </section>
 
   <!-------------------About Section--------------->
@@ -56,7 +69,8 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h3 class="text-4xl text-orange-600 mb-4">Why Adopt From Us?</h3>
       <p class="text-gray-700 text-lg">
-        We rescue, shelter, and love dogs until they find their forever families. When you adopt, you're giving a home and a heart to a soul who’s been waiting for love.
+        We rescue, shelter, and love dogs until they find their forever families. When you adopt, you're giving a home
+        and a heart to a soul who’s been waiting for love.
       </p>
     </div>
   </section>
@@ -98,4 +112,5 @@
   </footer>
 
 </body>
+
 </html>
